@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 
 // Charger les identifiants Google
-const credentials = JSON.parse(fs.readFileSync("credentials.json"));
+const credentials = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT);
 const SCOPES = ["https://www.googleapis.com/auth/calendar"];
 const auth = new google.auth.JWT(
   credentials.client_email,
