@@ -1,12 +1,11 @@
 {
   "name": "dasha-rdv-backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "testCalendar.js",
   "scripts": {
-     "start": "node testCalendar.js",
-    "test-calendar": "node testCalendar.js"
+    "start": "node testCalendar.js"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "googleapis": "^133.0.0"
   }
 }
